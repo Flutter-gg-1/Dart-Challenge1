@@ -2,10 +2,12 @@ import 'dart:io';
 void main() {
   Map<String,List<String>> recipes = {};
   addRecipe(recipes);
+  getRecipes(recipes);
   addRecipe(recipes);
+  getRecipes(recipes);
   removeRecipe(recipes,'food');
   getRecipes(recipes);
-  // getByName(recipes, 'food');
+  getByName(recipes, 'food222');
 }
 
 addRecipe(Map<String,List<String>> recipes) {
@@ -26,7 +28,12 @@ removeRecipe(Map recipes,String r) {
 }
 
 getRecipes(Map recipes) {
+  print("Recipes : ");
   for(var key in recipes.keys) {
     print("$key : ${recipes[key]}");
   }
+}
+
+getByName(Map recipes, String key) {
+  print("Ingredients of $key are ${recipes[key]}");
 }
