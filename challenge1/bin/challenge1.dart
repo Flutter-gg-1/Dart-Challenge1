@@ -13,13 +13,24 @@ import 'dart:io';
 
 void main (){
 
+recipe();
+
+}
+
+recipe (){
 Map recipes={
   "onion":"onion",
   "tomato":"tomato"
 };
+
+
+add(){
+print("to add enter 1");
+int inputt=int.parse(stdin.readLineSync()!);
+recipes["banana"] = "banana";
 print(recipes);
-recipes["stra"] = "stra";
-print(recipes);
+}
+
 recipes.remove("onion");
 print(recipes);
 
@@ -39,6 +50,4 @@ switch(input){
 }
 
 print(recipes);
-
-
 }
