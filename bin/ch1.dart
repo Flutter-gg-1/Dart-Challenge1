@@ -11,8 +11,8 @@ void main(){
 
 
 
-  AddR(val: Recipe, resName: "abo", lis: ["a","s"]);
-  AddR(val: Recipe, resName: "abddd", lis: ["r","s"]);
+  AddR(val: Recipe, resName: "checekn", lis: ["rice","chekcen"]);
+  AddR(val: Recipe, resName: "egg", lis: ["oil","egg"]);
 
 
 
@@ -22,10 +22,10 @@ void main(){
   print("\n");
 
 
-  SerchR(Recipe, "abddd");
+  SerchR(Recipe, "egg");
 
 
-  removeR("abddd", Recipe);
+  removeR("egg", Recipe);
 
   print("after");
 
